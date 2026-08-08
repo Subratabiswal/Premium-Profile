@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inquiry Sent | Subrat Kumar Biswal</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #07111f;
+    --surface: rgba(12, 23, 42, 0.8);
+    --line: rgba(165, 188, 219, 0.18);
+    --text: #f4f7fb;
+    --muted: #9fb2c8;
+    --primary: #60a5fa;
+    --accent: #8b5cf6;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    align-items: center;
+    background:
+      radial-gradient(circle at top left, rgba(96, 165, 250, 0.18), transparent 28%),
+      radial-gradient(circle at right, rgba(139, 92, 246, 0.18), transparent 28%),
+      linear-gradient(180deg, #07111f 0%, #050b14 100%);
+    color: var(--text);
+    display: grid;
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    padding: 24px;
+  }
+
+  .card {
+    backdrop-filter: blur(22px);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    box-shadow: 0 24px 80px rgba(4, 11, 25, 0.45);
+    max-width: 720px;
+    padding: 32px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .pill {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.18), rgba(139, 92, 246, 0.18));
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--primary);
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: -0.05em;
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 1.04rem;
+    line-height: 1.7;
+    margin: 0 auto 16px;
+    max-width: 56ch;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  a {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: white;
+    display: inline-flex;
+    font-weight: 700;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  a.primary {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-color: transparent;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <span class="pill">Inquiry Received</span>
+    <h1>Thanks for reaching out.</h1>
+    <p>Your message has been submitted. If this site is deployed on Netlify, the form submission is now available in the Netlify dashboard.</p>
+    <p>For other hosts, wire the same form to your preferred provider and keep this success page as the redirect destination.</p>
+    <div class="actions">
+      <a class="primary" href="index.html#home">Return Home</a>
+      <a href="resume-subrat-kumar-biswal.txt" download>Download Resume</a>
+    </div>
+  </main>
+</body>
+</html>

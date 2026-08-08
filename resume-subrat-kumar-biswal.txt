@@ -1,0 +1,37 @@
+Subrat Kumar Biswal
+Software Engineer
+
+Email: subratbiswal84740@gmail.com
+Portfolio: premium software engineer website
+Focus: frontend engineering, product UI, responsive systems, deployment-ready experiences
+
+Professional Summary
+Engineer focused on building polished, responsive web experiences with a premium visual layer and 
+clean production structure. Strong interest in frontend architecture, interaction design, reusable
+components, and launch-ready delivery.
+
+Core Skills
+- HTML5
+- CSS3
+- JavaScript
+- Responsive UI engineering
+- Motion design for web
+- Product-style portfolio systems
+- Static deployment workflows
+
+Selected Project Themes
+- Analytics dashboard UI
+- Full stack client delivery platform
+- AI workspace assistant interface
+- Executive portfolio system
+- Delivery workflow board
+- Model insight studio
+
+Certificates and Learning
+- Frontend Engineering Foundations
+- Cloud and Deployment Workflow
+- Applied AI Interface Design
+- Hackathon and Product Sprint Recognition
+
+Availability
+Open to internships, freelance website builds, premium portfolio redesigns, and frontend product work.

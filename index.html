@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Premium software engineer portfolio with 3D effects, animated visuals, project showcases, certification gallery, and a static-hosting-friendly contact workflow.">
+<meta name="theme-color" content="#07111f">
+<title>Subrat Kumar Biswal | Software Engineer Portfolio</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div class="page-noise" aria-hidden="true"></div>
+<div class="aurora aurora-one" aria-hidden="true"></div>
+<div class="aurora aurora-two" aria-hidden="true"></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Go to homepage">
+    <span class="brand-mark">SK</span>
+    <span class="brand-text">Subrat Kumar Biswal</span>
+  </a>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <a class="button button-ghost" href="resume-subrat-kumar-biswal.txt" download>Resume</a>
+    <button id="themeBtn" class="theme-toggle" type="button" aria-label="Toggle color theme">
+      <span class="theme-icon">T</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero section" id="home">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Software Engineer / Frontend Systems / Premium UX</p>
+      <h1>Designing polished digital products with production-ready engineering.</h1>
+      <p class="hero-text">
+        I build responsive, high-trust web experiences with modern frontend architecture,
+        strong interaction design, and a clean path from prototype to deployment.
+      </p>
+
+      <div class="hero-badges">
+        <span>3D interactions</span>
+        <span>Animated visuals</span>
+        <span>Static deployment ready</span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">View Projects</a>
+        <a class="button button-secondary" href="resume-subrat-kumar-biswal.txt" download>Download Resume</a>
+      </div>
+
+      <div class="hero-stats">
+        <article class="stat-card glass tilt-card">
+          <strong data-count="12">0</strong>
+          <span>Production-grade builds</span>
+        </article>
+        <article class="stat-card glass tilt-card">
+          <strong data-count="8">0</strong>
+          <span>UI systems shipped</span>
+        </article>
+        <article class="stat-card glass tilt-card">
+          <strong data-count="18">0</strong>
+          <span>Certifications and workshops</span>
+        </article>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="hero-panel glass tilt-card">
+        <div class="panel-topbar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="panel-profile">
+          <img
+            src="Subrat photo.jpg"
+            alt="Subrat Kumar Biswal profile photo"
+          >
+          <div>
+            <p class="muted-label">Currently focused on</p>
+            <h2 id="typing">Building modern web experiences</h2>
+            <p class="muted-text">JavaScript, React patterns, motion design, performance-first interfaces, and deployment pipelines.</p>
+          </div>
+        </div>
+        <div class="signal-grid">
+          <article>
+            <span class="muted-label">Core stack</span>
+            <strong>HTML / CSS / JavaScript</strong>
+          </article>
+          <article>
+            <span class="muted-label">Delivery focus</span>
+            <strong>Reusable UI systems</strong>
+          </article>
+          <article>
+            <span class="muted-label">Preferred flow</span>
+            <strong>Prototype -> Polish -> Deploy</strong>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-strip section reveal" aria-label="Technology highlights">
+    <div class="trust-pill">Responsive Engineering</div>
+    <div class="trust-pill">Motion-Driven UI</div>
+    <div class="trust-pill">Accessible Components</div>
+    <div class="trust-pill">Static Hosting Friendly</div>
+    <div class="trust-pill">Performance-Minded Frontend</div>
+  </section>
+
+  <section class="section about-section" id="about">
+    <div class="section-heading reveal">
+      <p class="eyebrow">About Me</p>
+      <h2>Professional presence with engineer-first clarity.</h2>
+      <p>
+        This portfolio is structured like a premium software engineer website: visual confidence up top,
+        concise proof points in the middle, and enough technical depth below to help recruiters, founders,
+        and collaborators evaluate both craft and execution.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <article class="glass detail-card reveal tilt-card">
+        <p class="muted-label">What I bring</p>
+        <h3>Modern interfaces with reliable implementation</h3>
+        <p>I focus on components that feel refined, load fast, and communicate product quality from the first scroll.</p>
+      </article>
+      <article class="glass detail-card reveal tilt-card">
+        <p class="muted-label">How I work</p>
+        <h3>Design-aware engineering</h3>
+        <p>I blend product thinking, frontend architecture, and interaction design to create experiences that look premium and stay maintainable.</p>
+      </article>
+      <article class="glass detail-card reveal tilt-card">
+        <p class="muted-label">Ideal projects</p>
+        <h3>SaaS, portfolio, dashboard, and AI product UI</h3>
+        <p>I enjoy building interfaces where storytelling, usability, motion, and business clarity all matter at once.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section expertise-section">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Expertise</p>
+      <h2>Capabilities that fit a premium engineering portfolio.</h2>
+    </div>
+
+    <div class="expertise-grid">
+      <article class="glass feature-card reveal tilt-card">
+        <span class="feature-index">01</span>
+        <h3>Frontend Engineering</h3>
+        <p>Semantic markup, responsive systems, stateful interactions, and production-ready UI organization.</p>
+      </article>
+      <article class="glass feature-card reveal tilt-card">
+        <span class="feature-index">02</span>
+        <h3>Motion and Microinteractions</h3>
+        <p>Scroll reveals, depth layering, hover transforms, and animation details that elevate trust without hurting performance.</p>
+      </article>
+      <article class="glass feature-card reveal tilt-card">
+        <span class="feature-index">03</span>
+        <h3>Deployment Readiness</h3>
+        <p>Static-friendly structure, downloadable assets, and contact workflows that can map cleanly to Netlify or similar hosting.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section projects-section" id="projects">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Project Gallery</p>
+      <h2>Selected builds with premium presentation and product thinking.</h2>
+    </div>
+
+    <div class="project-filters reveal" role="tablist" aria-label="Project category filters">
+      <button class="filter-chip active" data-filter="all" type="button">All</button>
+      <button class="filter-chip" data-filter="frontend" type="button">Frontend</button>
+      <button class="filter-chip" data-filter="fullstack" type="button">Full Stack</button>
+      <button class="filter-chip" data-filter="ai" type="button">AI</button>
+    </div>
+
+    <div class="project-grid">
+      <article class="glass project-card reveal tilt-card" data-category="frontend">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=premium%20saas%20dashboard%20interface%2C%20dark%20mode%2C%203d%20glassmorphism%2C%20analytics%20panels%2C%20professional%20product%20shot%20for%20website&image_size=landscape_16_9" alt="Premium SaaS dashboard preview">
+        <div class="project-body">
+          <div class="project-meta"><span>Frontend</span><span>2026</span></div>
+          <h3>Analytics Control Center</h3>
+          <p>Dashboard UI focused on visual hierarchy, layered metrics, and polished states across desktop and tablet screens.</p>
+          <div class="tag-row"><span>Dashboard</span><span>UI Architecture</span><span>Performance</span></div>
+          <div class="project-links"><a href="#contact">Request Demo</a><a href="#contact">See Case Study</a></div>
+        </div>
+      </article>
+
+      <article class="glass project-card reveal tilt-card" data-category="fullstack">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=full%20stack%20product%20landing%20page%20with%20developer%20dashboard%2C%20premium%20blue%20lighting%2C%20modern%20software%20product%20mockup&image_size=landscape_16_9" alt="Full stack product platform preview">
+        <div class="project-body">
+          <div class="project-meta"><span>Full Stack</span><span>Launch Build</span></div>
+          <h3>Client Delivery Platform</h3>
+          <p>End-to-end product concept featuring polished onboarding flows, responsive UI, and a conversion-aware content structure.</p>
+          <div class="tag-row"><span>Product UI</span><span>Forms</span><span>Deployment</span></div>
+          <div class="project-links"><a href="#contact">View Architecture</a><a href="#contact">Discuss Build</a></div>
+        </div>
+      </article>
+
+      <article class="glass project-card reveal tilt-card" data-category="ai">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=ai%20assistant%20interface%20for%20web%20application%2C%20premium%20futuristic%20ui%2C%20glowing%20cards%2C%20developer%20workspace%20visual&image_size=landscape_16_9" alt="AI assistant interface preview">
+        <div class="project-body">
+          <div class="project-meta"><span>AI</span><span>Interaction Design</span></div>
+          <h3>AI Workspace Companion</h3>
+          <p>Conversational product UI built to balance clarity, assistant outputs, and trust signals through high-end visual design.</p>
+          <div class="tag-row"><span>AI UX</span><span>Prompt Flows</span><span>Trust UI</span></div>
+          <div class="project-links"><a href="#contact">Review Concept</a><a href="#contact">Get Build Plan</a></div>
+        </div>
+      </article>
+
+      <article class="glass project-card reveal tilt-card" data-category="frontend">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=portfolio%20website%20hero%20section%20with%20animated%20background%2C%20glassmorphism%20cards%2C%20professional%20developer%20branding%2C%20premium%20web%20design&image_size=landscape_16_9" alt="Portfolio hero section preview">
+        <div class="project-body">
+          <div class="project-meta"><span>Frontend</span><span>Brand Identity</span></div>
+          <h3>Executive Portfolio System</h3>
+          <p>Brand-led personal website concept that combines storytelling, case studies, and a contact funnel inside one premium interface.</p>
+          <div class="tag-row"><span>Portfolio</span><span>Storytelling</span><span>Motion</span></div>
+          <div class="project-links"><a href="#home">Open Hero</a><a href="#contact">Customize Site</a></div>
+        </div>
+      </article>
+
+      <article class="glass project-card reveal tilt-card" data-category="fullstack">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=developer%20task%20management%20web%20app%20with%20kanban%20board%2C%20glass%20cards%2C%20clean%20dark%20theme%2C%20premium%20product%20shot&image_size=landscape_16_9" alt="Task management application preview">
+        <div class="project-body">
+          <div class="project-meta"><span>Full Stack</span><span>Operations</span></div>
+          <h3>Delivery Workflow Board</h3>
+          <p>Project operations UI organized around progress visibility, focus states, and clean collaboration signals for teams.</p>
+          <div class="tag-row"><span>Kanban</span><span>Productivity</span><span>Systems</span></div>
+          <div class="project-links"><a href="#contact">Book Walkthrough</a><a href="#contact">Explore Details</a></div>
+        </div>
+      </article>
+
+      <article class="glass project-card reveal tilt-card" data-category="ai">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=machine%20learning%20insights%20dashboard%20with%20premium%20charts%2C%20dark%20glass%20ui%2C%20cinematic%20technology%20visual&image_size=landscape_16_9" alt="Machine learning insights dashboard preview">
+        <div class="project-body">
+          <div class="project-meta"><span>AI</span><span>Data Experience</span></div>
+          <h3>Model Insight Studio</h3>
+          <p>Visualization-focused interface for surfacing model outputs, experiment summaries, and technical confidence indicators.</p>
+          <div class="tag-row"><span>ML UX</span><span>Visualization</span><span>Insights</span></div>
+          <div class="project-links"><a href="#contact">Get Prototype</a><a href="#contact">Plan Next Build</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section certificates-section" id="certificates">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Certificate Gallery</p>
+      <h2>Learning signals that reinforce technical credibility.</h2>
+    </div>
+
+    <div class="certificate-grid">
+      <article class="glass certificate-card reveal tilt-card">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=professional%20software%20engineering%20certificate%20displayed%20in%20premium%20glass%20frame%2C%20modern%20desk%20setup%2C%20cinematic%20website%20visual&image_size=landscape_4_3" alt="Software engineering certificate display">
+        <div>
+          <p class="muted-label">Certification</p>
+          <h3>Frontend Engineering Foundations</h3>
+          <p>Core responsive systems, modern UI layout strategies, and maintainable client-side structure.</p>
+        </div>
+      </article>
+      <article class="glass certificate-card reveal tilt-card">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=cloud%20certification%20award%20in%20premium%20blue%20lighting%2C%20professional%20technology%20workspace%2C%20clean%20website%20asset&image_size=landscape_4_3" alt="Cloud certification display">
+        <div>
+          <p class="muted-label">Certification</p>
+          <h3>Cloud and Deployment Workflow</h3>
+          <p>Hands-on understanding of shipping web experiences with attention to hosting, delivery, and reliability.</p>
+        </div>
+      </article>
+      <article class="glass certificate-card reveal tilt-card">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=artificial%20intelligence%20workshop%20certificate%20display%2C%20futuristic%20workspace%2C%20premium%20purple%20lighting%2C%20website%20gallery%20asset&image_size=landscape_4_3" alt="Artificial intelligence workshop certificate">
+        <div>
+          <p class="muted-label">Workshop</p>
+          <h3>Applied AI Interface Design</h3>
+          <p>Explored practical user experience patterns for AI-driven products and assistant-style interfaces.</p>
+        </div>
+      </article>
+      <article class="glass certificate-card reveal tilt-card">
+        <img src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=hackathon%20achievement%20certificate%20with%20premium%20developer%20desk%20scene%2C%20modern%20glassmorphism%20presentation&image_size=landscape_4_3" alt="Hackathon achievement certificate">
+        <div>
+          <p class="muted-label">Achievement</p>
+          <h3>Hackathon and Product Sprint Recognition</h3>
+          <p>Evidence of shipping quickly, presenting clearly, and contributing effectively under real project pressure.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section timeline-section">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Journey</p>
+      <h2>A portfolio that explains both growth and readiness.</h2>
+    </div>
+
+    <div class="timeline">
+      <article class="glass timeline-item reveal">
+        <span>01</span>
+        <div>
+          <h3>Foundation</h3>
+          <p>Built strong fundamentals across HTML, CSS, JavaScript, and interface composition.</p>
+        </div>
+      </article>
+      <article class="glass timeline-item reveal">
+        <span>02</span>
+        <div>
+          <h3>Real UI Practice</h3>
+          <p>Moved from simple pages to product-style layouts with reusable components and responsive behavior.</p>
+        </div>
+      </article>
+      <article class="glass timeline-item reveal">
+        <span>03</span>
+        <div>
+          <h3>Premium Presentation</h3>
+          <p>Layered motion, depth, and content strategy into the portfolio so it feels closer to a shipped product than a resume page.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="contact-layout glass reveal">
+      <div class="contact-copy">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build something that feels as strong as it performs.</h2>
+        <p>
+          This form is structured for static deployment. On Netlify, submissions can be enabled with no frontend rewrite.
+          For other hosts, you can plug the form into Formspree, EmailJS, or your own backend endpoint.
+        </p>
+        <div class="contact-points">
+          <div>
+            <span class="muted-label">Email</span>
+            <a href="mailto:subratbiswal84740@gmail.com">subratbiswal84740@gmail.com</a>
+          </div>
+          <div>
+            <span class="muted-label">Availability</span>
+            <p>Open to internships, freelance builds, and portfolio redesign work.</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" name="contact" method="POST" action="success.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden-field">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
+        <label>
+          Full Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email Address
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Project Type
+          <select name="projectType" required>
+            <option value="">Select one</option>
+            <option value="portfolio">Portfolio website</option>
+            <option value="frontend">Frontend project</option>
+            <option value="product">Product UI</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label>
+          Project Details
+          <textarea name="message" rows="5" placeholder="Tell me about your idea, timeline, and goals." required></textarea>
+        </label>
+        <button class="button button-primary button-submit" type="submit">Send Inquiry</button>
+        <p class="form-note" id="formNote">Netlify will process submissions after deployment. While previewing locally, this form validates and simulates a successful send.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Subrat Kumar Biswal. Crafted for a premium software engineer presence.</p>
+  <a href="#home">Back to top</a>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

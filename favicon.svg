@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="SK monogram">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#07111f"/>
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="url(#g)" opacity=".14"/>
+  <path d="M34 42c0-6.627 5.373-12 12-12h28c6.627 0 12 5.373 12 12v4H74v-2c0-1.105-.895-2-2-2H48c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h24c7.732 0 14 6.268 14 14v14c0 6.627-5.373 12-12 12H46c-6.627 0-12-5.373-12-12v-4h12v2c0 1.105.895 2 2 2h24c1.105 0 2-.895 2-2V70c0-1.105-.895-2-2-2H48c-7.732 0-14-6.268-14-14V42Z" fill="#dbeafe"/>
+  <path d="M40 32h12v64H40V32Zm44 0h15L74 59l27 37H86L64 65v31H52V32h12v28l20-28Z" fill="#ffffff"/>
+</svg>
